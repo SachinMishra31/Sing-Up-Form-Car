@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singup Form Car</title>
+</head>
+<body>
+    <form action = "/submit_post" method = "post">
+        
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email" required><br><br>
+
+        <label for="gender">gender : </label>
+
+        Male<input type="radio" name="gender" id="gender"  required>Female<input type="radio" name="gender" id="gender"  required>
+        other<input type="radio" name="gender" id="gender"  required><br><br>
+
+        <select  id = "cars" name = "cars" required>
+            <option value = "BMW">BMW</option>
+            <option value = "Audi">Audi</option>
+            <option value = "Mercedez">Mercedez</option>
+        </select><br><br>
+
+        <label for="age">Age </label>
+        <input type="number" name="age" id="age" placeholder="Enter your age" required><br><br>
+
+        <label for="DOB">DOB</label>
+        <input type="date" name="DOB" id="DOB" placeholder="Enter your DOB" required><br><br>
+
+        <label for="Password">Password</label>
+        <input type="password" name="Password" id="Password" placeholder="Enter your Password" maxlength ="9" pattern="[0-9]{10}" required><br><br>
+
+        <input type = "submit"  value = "submit">
+
+
+    </form>
+</body>
+</html>
